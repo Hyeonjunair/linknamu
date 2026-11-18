@@ -15,7 +15,6 @@ export type Profile = {
 export const profile: Profile = {
   name: "조현준",
   bio: "카피라이터|요즘에는 AI개발에 관심이 많아요",
-  avatar: "/조현준 이력서 사진.jpg",
 };
 
 export const links: LinkItem[] = [
