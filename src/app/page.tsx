@@ -1,4 +1,4 @@
-import LinkCard from "@/components/LinkCard";
+import LinkList from "@/components/LinkList";
 import ProfileHeader from "@/components/ProfileHeader";
 import { links, profile } from "@/data/profile";
 
@@ -6,13 +6,7 @@ export default function Home() {
   return (
     <main className="mx-auto flex w-full max-w-md flex-1 flex-col items-center px-6 py-16 sm:py-24">
       <ProfileHeader {...profile} />
-      <ul className="mt-12 flex w-full flex-col gap-4">
-        {links.map((link) => (
-          <li key={link.id}>
-            <LinkCard {...link} />
-          </li>
-        ))}
-      </ul>
+      <LinkList links={links} />
       <footer className="mt-auto pt-16 text-xs tracking-wide text-stone-400">링크나무</footer>
     </main>
   );
